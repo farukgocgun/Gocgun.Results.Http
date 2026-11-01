@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Gocgun.Results.Http</RootNamespace>
+    <IsPackable>true</IsPackable>
+    <PackageId>Gocgun.Results.Http</PackageId>
+    <Description>Maps Gocgun.Results to TypedResults. Gocgun.Results stays free of ASP.NET.</Description>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Gocgun.Results\src\Gocgun.Results\Gocgun.Results.csproj" />
+  </ItemGroup>
+</Project>
