@@ -26,3 +26,7 @@ Success with no payload is 204. Success with `Item` is 200. `ToCreatedHttpResult
 Tests are unit tests that execute `IResult` on `DefaultHttpContext`. No socket is opened.
 
 License: AGPL-3.0-only (`LICENSE`). Copyright holder exception: `LICENSE-EXCEPTION`.
+
+## Publishing to nuget.org
+
+Run `scripts/publish.sh` (or `scripts/publish.ps1` on Windows). It dispatches the manual `release.yml` workflow of each dependency first, in dependency order (Gocgun.Results, Gocgun.Results.Http), then of this package, waiting for each run and stopping on the first failure. Requires the GitHub CLI signed in with `gh auth login`; the `nuget` environment and the nuget.org Trusted Publishing policy must exist in each repository.
