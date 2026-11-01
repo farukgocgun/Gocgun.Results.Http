@@ -25,7 +25,7 @@ Success with no payload is 204. Success with `Item` is 200. `ToCreatedHttpResult
 
 Tests are unit tests that execute `IResult` on `DefaultHttpContext`. No socket is opened.
 
-License: AGPL-3.0-only (`LICENSE`). Copyright holder exception: `LICENSE-EXCEPTION`.
+License: MIT (`LICENSE`).
 
 ## Publishing to nuget.org
 
